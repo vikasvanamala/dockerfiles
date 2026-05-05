@@ -1,0 +1,7 @@
+ARG VERSION
+FROM almalinux:${version}
+ARG COURSE="DOCKER" \
+    TRAINER="SHIVA"
+ENV TRAINER=${TRAINER}
+RUN echo "course: ${COURSE}, trainer: ${TRAINER} version: ${VERSION}"
+CMD ["sleep", "1000"]
