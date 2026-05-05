@@ -3,4 +3,4 @@ RUN dnf install nginx -y
 RUN useradd vikas
 
 user vikas
-CMD ["sleep", "10"]
+CMD ["sleep", "100"]
